@@ -24,6 +24,7 @@ export class HomePage {
 //   dept:'Ionic Developer',
 //   age:33
 // }
+///object of persons
 persons: FirebaseListObservable<any>;
   constructor(public navCtrl: NavController, public db:AngularFireDatabase) {
 this.persons=db.list("/peaple");
